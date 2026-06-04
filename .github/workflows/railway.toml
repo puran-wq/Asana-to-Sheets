@@ -1,0 +1,6 @@
+[deploy]
+startCommand = "python sheets_to_asana.py"
+
+[[crons]]
+schedule = "*/5 * * * *"
+command = "python sheets_to_asana.py"
