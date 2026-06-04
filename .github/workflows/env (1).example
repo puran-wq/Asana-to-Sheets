@@ -1,0 +1,16 @@
+# ── Set these as environment variables on your hosting platform ────────────────
+# (Railway: Settings → Variables | Render: Environment tab)
+
+# Your Asana Personal Access Token (the "service account" token you created)
+ASANA_ACCESS_TOKEN=your_asana_token_here
+
+# Asana project GID — from project URL: asana.com/0/PROJECT_GID/list
+ASANA_PROJECT_GID=your_project_gid_here
+
+# Asana workspace GID
+# Find it: curl -H "Authorization: Bearer YOUR_TOKEN" https://app.asana.com/api/1.0/workspaces
+ASANA_WORKSPACE_GID=your_workspace_gid_here
+
+# Google credentials — paste the entire contents of credentials.json as a single line
+# (In Railway/Render, set this as a secret env var — do NOT commit it to git)
+GOOGLE_CREDENTIALS_JSON={"type":"service_account","project_id":"..."}
